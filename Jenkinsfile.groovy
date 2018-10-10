@@ -2,15 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Restore') {
             steps {
                 echo 'Restoring...'
                 bat "dotnet restore"
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo 'Testing..'
+                echo 'Building..'
+                bat "dotnet build"
             }
         }
         stage('Deploy') {
