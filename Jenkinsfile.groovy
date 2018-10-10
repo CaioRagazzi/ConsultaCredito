@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                bat "dotnet build"
+                echo 'Restoring..'
+                bat "dotnet restore"
             }
         }
         stage('Test') {
