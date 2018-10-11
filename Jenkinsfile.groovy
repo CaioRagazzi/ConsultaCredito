@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Restoring...'
                 bat "dotnet restore"
+                dir('teste')
             }
         }
         stage('Build') {
