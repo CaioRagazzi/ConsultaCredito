@@ -11,7 +11,8 @@ pipeline {
         stage('Pwd') {
             steps {
                 echo 'Pwding...'
-                pwd()
+                def rootDir = pwd()
+                echo rootDir
             }
         }
         stage('Build') {
