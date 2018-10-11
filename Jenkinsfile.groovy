@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Restore') {
             steps {
-                echo 'Restoring...'
+                echo 'Restoringgg...'
                 bat "dotnet restore"
             }
         }
