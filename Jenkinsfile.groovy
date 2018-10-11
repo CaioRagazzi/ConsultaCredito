@@ -5,7 +5,7 @@ pipeline {
          stage('Load Parameters') {
             steps {
                 script{
-                    println "=======Load Parameters"
+                    println "=======Load Parameters============"
                 }
             }
         }
