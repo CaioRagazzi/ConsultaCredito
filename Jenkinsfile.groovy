@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                bat "dotnet build"
+                bat "dotnet clean"
             }
         }
         stage('Deploy') {
