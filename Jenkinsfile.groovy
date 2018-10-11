@@ -11,7 +11,7 @@ pipeline {
         stage('Pwd') {
             steps {
                 echo 'Pwding...'
-                pwd
+                pwd()
             }
         }
         stage('Build') {
