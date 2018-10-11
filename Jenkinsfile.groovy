@@ -5,7 +5,7 @@ pipeline {
          stage('Load Parameters') {
             steps {
                     println "=======Load Parameters"
-                    checkout ([$class: 'GitSCM', userRemoteConfigs: [[url: "https://github.com/CaioRagazzi/ConsultaCredito/edit/master/Jenkinsfile.groovy.git", credentialsId: credential]])
+                    checkout ([$class: 'GitSCM', userRemoteConfigs: [[url: "https://github.com/CaioRagazzi/ConsultaCredito/edit/master/Jenkinsfile.groovy.git", credentialsId: credential]]])
             }
         }
         stage('Restore') {
