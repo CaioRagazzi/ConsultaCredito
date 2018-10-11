@@ -6,6 +6,7 @@ pipeline {
             steps {
                 script{
                     println "=======Load Parameters============"
+                    checkout([$class: 'GitSCM', branches: [[name: '*/Master']], userRemoteConfigs: [[url: 'https://github.com/CaioRagazzi/ConsultaCredito.git']]])
                 }
             }
         }
