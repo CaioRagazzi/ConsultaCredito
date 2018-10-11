@@ -8,10 +8,10 @@ pipeline {
                 bat "dotnet restore"
             }
         }
-        stage('Dir teste') {
+        stage('Pwd') {
             steps {
-                echo 'Diring...'
-                dir('teste')
+                echo 'Pwding...'
+                pwd
             }
         }
         stage('Build') {
